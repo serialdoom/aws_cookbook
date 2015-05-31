@@ -56,6 +56,11 @@ link "/etc/nginx/sites-enabled/dstat" do
 end
 
 
+service "nginx" do
+    action :stop
+    action :start
+end
+
 git "/usr/share/dstat" do
   repository "git://github.com/serialdoom/dstat.git"
 end
