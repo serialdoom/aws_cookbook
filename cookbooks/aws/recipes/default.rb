@@ -8,6 +8,11 @@
 #
 #
 
+execute "apt-get-update" do
+  command "apt-get update"
+  ignore_failure true
+end
+
 apt_package "nginx" do
     action:install
 end
