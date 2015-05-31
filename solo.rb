@@ -1,5 +1,5 @@
-file_cache_path "/home/mhristof/tmp/20150531_193214/chef-repo/chef-solo"
-cookbook_path "/home/mhristof/tmp/20150531_193214/chef-repo/cookbooks"
+file_cache_path "/home/ubuntu/aws_cookbook/chef-solo"
+cookbook_path "/home/ubuntu/aws_cookbook/cookbooks"
 
 
 
