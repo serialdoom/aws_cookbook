@@ -12,5 +12,5 @@ git "/tmp/presentation" do
 end
 
 execute "rsync to default html location" do
-  command "rsynv -avl /tmp/presentation/ /usr/share/nginx/html/"
+  command "rsync -avl /tmp/presentation/ /usr/share/nginx/html/"
 end
