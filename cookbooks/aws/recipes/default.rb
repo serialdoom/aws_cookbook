@@ -13,8 +13,6 @@ execute "apt-get-update" do
   ignore_failure true
 end
 
-depends "nginx_aws"
-
 directory "/usr/share/nginx/html/dstat" do
 end
 
