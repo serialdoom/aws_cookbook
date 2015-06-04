@@ -12,7 +12,6 @@ apt_package "nginx" do
 end
 
 template "/etc/nginx/sites-available/default" do
-  action :create_if_missing
   source 'default.erb'
   mode 0755
   owner 'root'
