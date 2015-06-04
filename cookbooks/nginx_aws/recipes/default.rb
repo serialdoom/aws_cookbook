@@ -17,7 +17,7 @@ template "/etc/nginx/sites-available/default" do
   owner 'root'
   group 'root'
   variables({
-    :server_port => 8080,
+    :server_port => 8081,
     :server_root => "/usr/share/nginx/html" })
 end
 
