@@ -13,7 +13,7 @@ execute "apt-get-update" do
   ignore_failure true
 end
 
-package ["rsnapshot", "khunter", "chkrootkit", "tiger", "fail2ban", "nmap", "logwatch" ]
+package ["rsnapshot", "rkhunter", "chkrootkit", "tiger", "fail2ban", "nmap", "logwatch" ]
 
 
 execute "logwatch to crontab" do
