@@ -7,6 +7,10 @@
 # All rights reserved - Do Not Redistribute
 #
 
+apt_package "tmux" do
+    action:install
+end
+
 directory "/usr/share/nginx/html/dstat" do
 end
 
