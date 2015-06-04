@@ -13,29 +13,7 @@ execute "apt-get-update" do
   ignore_failure true
 end
 
-apt_package "nginx" do
-    action:install
-end
-
-template "/etc/nginx/sites-available/default" do
-  action :create_if_missing
-  source 'default.erb'
-  mode 0755
-  owner 'root'
-  group 'root'
-  variables({
-    :server_port => 8080,
-    :server_root => "/usr/share/nginx/html" })
-end
-
-template "/usr/share/nginx/html" do
-  action :create_if_missing
-  source 'index.html.erb'
-  mode 0755
-  owner 'root'
-  group 'root'
-end
-
+depends "nginx_aws"
 
 directory "/usr/share/nginx/html/dstat" do
 end
