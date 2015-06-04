@@ -2,6 +2,6 @@
       "run_list": [
           "recipe[aws]",
           "recipe[nginx_aws]",
-          "recipe[dstat_web]",
+          "recipe[dstat_web]"
           ]
 }
